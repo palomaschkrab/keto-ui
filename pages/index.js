@@ -1,22 +1,15 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
+import RecipeCardsLayout from '../components/RecipeCardsLayout'
 
 const Index = (props) => (
-  <Layout>
-    <h1>How to Keto Cook</h1>
-    <ul>
-      {props.recipes.map(recipe => (
-        <li key={recipe.id}>
-          <Link as={`/p/${recipe.id}`} href={`/post?id=${recipe.id}`}>
-            <a>{recipe.id}
-            {recipe.name}
-            <img src={recipe.image.url} /></a>
-          </Link>
-      </li>
-      ))}
-    </ul>
-  </Layout>
+    <Layout>
+      <div>
+        <RecipeCardsLayout recipes={props.recipes} />
+      </div>
+        
+    </Layout>   
 )
 
 Index.getInitialProps = async function() {
