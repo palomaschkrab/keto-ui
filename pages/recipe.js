@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch'
 import IngredientsLayout from '../components/IngredientsLayout.js'
 import InstructionsLayout from '../components/InstructionsLayout.js'
 import AdditionalInformationLayout from '../components/AdditionalInformationLayout.js'
-import MicronutrientsInformationLayout from '../components/MicronutrientsInformationLayout.js'
+import MacronutrientsInformationLayout from '../components/MacronutrientsInformationLayout.js'
 
 const Recipe = props => (
     <Layout>
@@ -18,7 +18,7 @@ const Recipe = props => (
                             <h2>{props.recipe.name} {props.recipe.id}</h2>
                         </div>
                         <AdditionalInformationLayout cookingTime = {props.recipe.cookingTime} prepTime={props.recipe.prepTime} portions={props.recipe.portions}/>
-                        <MicronutrientsInformationLayout recipe = {props.recipe}/>                        
+                        <MacronutrientsInformationLayout carbs={props.recipe.macronutrients.carbs} fat={props.recipe.macronutrients.fat} protein={props.recipe.macronutrients.protein}/>                        
                     </div>                   
                 </div>
             </div>

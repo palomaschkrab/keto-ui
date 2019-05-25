@@ -3,7 +3,7 @@ import { faBreadSlice } from '@fortawesome/free-solid-svg-icons'
 import { faBacon } from '@fortawesome/free-solid-svg-icons'
 import { faDrumstickBite } from '@fortawesome/free-solid-svg-icons'
 
-class MicronutrientsInformationLayout extends React.Component {    
+class MacronutrientsInformationLayout extends React.Component {    
  
     render() {
       return (    
@@ -25,4 +25,4 @@ class MicronutrientsInformationLayout extends React.Component {
 }
 
 
-export default MicronutrientsInformationLayout
+export default MacronutrientsInformationLayout
