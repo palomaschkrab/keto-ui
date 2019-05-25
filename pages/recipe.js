@@ -2,24 +2,35 @@ import Layout from '../components/MyLayout.js'
 import fetch from 'isomorphic-unfetch'
 import IngredientsLayout from '../components/IngredientsLayout.js'
 import InstructionsLayout from '../components/InstructionsLayout.js'
-import AdditionalInformationLayout from '../components/AdditionalInformationLayout.js'
+import TimeAndPortionInformationLayout from '../components/TimeAndPortionInformationLayout.js'
 import MacronutrientsInformationLayout from '../components/MacronutrientsInformationLayout.js'
+import AdditionalInformationLayout from '../components/AdditionalInformationLayout.js'
 
 const Recipe = props => (
     <Layout>
         <div>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm">
+                    <div className="col-lg-3">
                         <img width="300px" height="400px" src={props.recipe.imageUrl}/>
                     </div>
-                    <div className="col-sm">
+                    <div className="col-lg-9">               
                         <div className="row">
-                            <h2>{props.recipe.name} {props.recipe.id}</h2>
+                            <div className="col-lg-12">
+                                <h2>{props.recipe.name} {props.recipe.id}</h2>
+                            </div>
                         </div>
-                        <AdditionalInformationLayout cookingTime = {props.recipe.cookingTime} prepTime={props.recipe.prepTime} portions={props.recipe.portions}/>
-                        <MacronutrientsInformationLayout carbs={props.recipe.macronutrients.carbs} fat={props.recipe.macronutrients.fat} protein={props.recipe.macronutrients.protein}/>                        
-                    </div>                   
+                        <div className="row">
+                            <div className="col-lg-4">
+                                <TimeAndPortionInformationLayout cookingTime = {props.recipe.cookingTime} prepTime={props.recipe.prepTime} portions={props.recipe.portions}/>
+                                <MacronutrientsInformationLayout carbs={props.recipe.macronutrients.carbs} fat={props.recipe.macronutrients.fat} protein={props.recipe.macronutrients.protein}/>                        
+                            </div>
+                            <div className="col-lg-8">
+                                <AdditionalInformationLayout additionalInformation = {props.recipe.additionalInfo}/>
+                            </div>    
+                        </div>       
+                    </div>  
+                    
                 </div>
             </div>
             <div className="container-ingredients">
