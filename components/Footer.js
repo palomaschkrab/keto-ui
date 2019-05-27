@@ -5,6 +5,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 const Footer = () => (
     <div>
         {/* <!-- Footer --> */}
@@ -53,11 +54,10 @@ const Footer = () => (
                     {/* <!-- Grid column --> */}
                     <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         {/* <!-- Content --> */}
-                        <h6 className="text-uppercase font-weight-bold">Company name</h6>
+                        <h6 className="text-uppercase font-weight-bold">How to Keto Cook</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                         <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipisicing elit.</p>
+                        consectetur adipisicing elit.</p>
                     </div>
                     {/* <!-- Grid column --> */}
 
@@ -66,9 +66,11 @@ const Footer = () => (
                         {/* <!-- Links --> */}
                         <h6 className="text-uppercase font-weight-bold">Products</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
-                        <p>
-                        <a href="#!">MDBootstrap</a>
-                        </p>
+                        <Link href="about_us">
+                            <a href="#!">About Us</a>
+                        </Link>
+                        
+                        
                         <p>
                         <a href="#!">MDWordPress</a>
                         </p>
@@ -88,7 +90,7 @@ const Footer = () => (
                         <h6 className="text-uppercase font-weight-bold">Useful links</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
-                        <a href="#!">Your Account</a>
+                        <a href="#!">Contact Us</a>
                         </p>
                         <p>
                         <a href="#!">Become an Affiliate</a>
