@@ -7,7 +7,7 @@ class MacronutrientsInformationLayout extends React.Component {
  
     render() {
       return (    
-        <div className="col-lg-12 border">
+        <div className="col-lg-12 bg-white text-dark">
             <p className="text-left"> 
                 <FontAwesomeIcon icon={faBreadSlice} color="black" size="1x"/> Carbs: {this.props.carbs}
             </p>

@@ -112,13 +112,9 @@ const Footer = () => (
                         <h6 className="text-uppercase font-weight-bold">Contact</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
-                        <i className="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <i className="fas fa-home mr-3"></i> Vancouver, CA</p>
                         <p>
-                        <i className="fas fa-envelope mr-3"></i> info@example.com</p>
-                        <p>
-                        <i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p>
-                        <i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        <i className="fas fa-envelope mr-3"></i> howtoketocook@gmail.com</p>
 
                     </div>
                     {/* <!-- Grid column --> */}

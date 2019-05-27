@@ -8,23 +8,25 @@ import AdditionalInformationLayout from '../components/AdditionalInformationLayo
 
 const Recipe = props => (
     <Layout>
-        <div>
-            <div className="container">
+        <div className="p-5">
+            <div >
                 <div className="row">
                     <div className="col-lg-3">
                         <img width="300px" height="400px" src={props.recipe.imageUrl}/>
                     </div>
                     <div className="col-lg-9">               
-                        <div className="row">
+                        <div className="row bg-white text-dark">
                             <div className="col-lg-12">
                                 <h2>{props.recipe.name} {props.recipe.id}</h2>
                             </div>
                         </div>
+                        <br/>
                         <div className="row">
                             <div className="col-lg-4">
                                 <TimeAndPortionInformationLayout cookingTime = {props.recipe.cookingTime} prepTime={props.recipe.prepTime} portions={props.recipe.portions}/>
                                 <MacronutrientsInformationLayout carbs={props.recipe.macronutrients.carbs} fat={props.recipe.macronutrients.fat} protein={props.recipe.macronutrients.protein}/>                        
                             </div>
+                            <br/>
                             <div className="col-lg-8">
                                 <AdditionalInformationLayout additionalInformation = {props.recipe.additionalInfo}/>
                             </div>    
@@ -33,10 +35,12 @@ const Recipe = props => (
                     
                 </div>
             </div>
-            <div className="container-ingredients">
+            <br/>
+            <div className="ingredients bg-white text-dark">
                 <IngredientsLayout ingredients={props.recipe.ingredients}/>                
             </div>
-            <div className="container-instructions">
+            <br/>
+            <div className="container-instructions bg-white text-dark">
                 <InstructionsLayout instructions={props.recipe.instructions}/>
             </div>
         </div>

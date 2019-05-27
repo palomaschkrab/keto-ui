@@ -7,7 +7,7 @@ class AdditionalInformationLayout extends React.Component {
  
     render() {
       return (    
-        <div className="col-lg-12 border">
+        <div className="col-lg-12 bg-white text-dark">
             <p className="text-left"> 
                 {this.props.additionalInformation}
             </p>

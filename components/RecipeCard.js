@@ -1,11 +1,7 @@
 import Link from 'next/link'
 
-const linkStyle = {
-    width: '18rem'
-}
-
 const RecipeCard = props => (    
-        <div className='card border-0' style={linkStyle}>
+        <div className='card border-pink'>
             <Link href={`/recipe?id=${props.id}`}>
                 <a>
                     <img src={props.url} className='card-img-top' alt='...'/>
@@ -14,6 +10,12 @@ const RecipeCard = props => (
                     </div>
                 </a>                
             </Link>
+            <style jsx>{`
+                    .border-pink {
+                        border-color: #FFD8FF;
+                    }
+                `}
+            </style> 
         </div>
     
 )
