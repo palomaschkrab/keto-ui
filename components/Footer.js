@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faFacebook } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => (
     <div>
@@ -23,20 +23,16 @@ const Footer = () => (
 
                         {/* <!-- Grid column --> */}
                         <div className="col-md-6 col-lg-7 text-center text-md-right">    
-                            {/* <!-- Facebook --> */}
-                            <a className="fb-ic">
+                            {/* <!-- Facebook --> */}                            
+                            <a className="fb-ic p-2" href="https://www.facebook.com/howtoketo.cook.9" target="_blank">
                                 <FontAwesomeIcon icon={faFacebook} color="white" size="2x"/>
-                            </a>
-                            {/* <!-- Twitter --> */}
-                            <a className="tw-ic">
+                            </a>                            
+                            {/* <!-- Twitter --> */}                            
+                            <a className="tw-ic p-2" href="https://twitter.com/HowKeto" target="_blank">
                                 <FontAwesomeIcon icon={faTwitter} color="white" size="2x"/>
-                            </a>
-                            {/* <!-- Instagram +--> */}
-                            <a className="gplus-ic">
-                                <FontAwesomeIcon icon={faInstagram} color="white" size="2x"/>
-                            </a>
+                            </a>                           
                             {/* <!--Linkedin --> */}
-                            <a className="li-ic">
+                            <a className="li-ic p-2" href="https://www.linkedin.com/in/paloma-schkrab/" target="_blank">
                                 <FontAwesomeIcon icon={faLinkedin} color="white" size="2x"/>
                             </a>
                         </div>
@@ -52,69 +48,35 @@ const Footer = () => (
                 <div className="row mt-3">
 
                     {/* <!-- Grid column --> */}
-                    <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
                         {/* <!-- Content --> */}
                         <h6 className="text-uppercase font-weight-bold">How to Keto Cook</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
-                        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.</p>
+                        <p>Find your favourite recipes here and help us grow our list by sharing yours and inviting friends to follow us!</p>
                     </div>
                     {/* <!-- Grid column --> */}
 
                     {/* <!-- Grid column --> */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         {/* <!-- Links --> */}
-                        <h6 className="text-uppercase font-weight-bold">Products</h6>
-                        <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
+                        <h6 className="text-uppercase font-weight-bold">Info</h6>
+                        <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto pt-2" />
                         <Link href="about_us">
                             <a href="#!">About Us</a>
                         </Link>
-                        
-                        
-                        <p>
-                        <a href="#!">MDWordPress</a>
-                        </p>
-                        <p>
-                        <a href="#!">BrandFlow</a>
-                        </p>
-                        <p>
-                        <a href="#!">Bootstrap Angular</a>
-                        </p>
                     </div>
-                    {/* <!-- Grid column -->
-
-                    <!-- Grid column --> */}
-                    <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                        {/* <!-- Links --> */}
-                        <h6 className="text-uppercase font-weight-bold">Useful links</h6>
-                        <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
-                        <p>
-                        <a href="#!">Contact Us</a>
-                        </p>
-                        <p>
-                        <a href="#!">Become an Affiliate</a>
-                        </p>
-                        <p>
-                        <a href="#!">Shipping Rates</a>
-                        </p>
-                        <p>
-                        <a href="#!">Help</a>
-                        </p>
-
-                    </div>
-                    {/* <!-- Grid column -->
-
-                    <!-- Grid column --> */}
+                     {/* <!-- Grid column -->
+                    
+                    <!-- Grid column -->  */}
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                         {/* <!-- Links --> */}
-                        <h6 className="text-uppercase font-weight-bold">Contact</h6>
+                        <h6 className="text-uppercase font-weight-bold">Contact US</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
-                        <i className="fas fa-home mr-3"></i> Vancouver, CA</p>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} color="pink" size="1x"/> Vancouver, BC - CA</p>
                         <p>
-                        <i className="fas fa-envelope mr-3"></i> howtoketocook@gmail.com</p>
+                        <FontAwesomeIcon icon={faEnvelope} color="pink" size="1x"/> howtoketocook@gmail.com</p>
 
                     </div>
                     {/* <!-- Grid column --> */}
@@ -123,23 +85,20 @@ const Footer = () => (
                 {/* <!-- Grid row --> */}
 
             </div>
-            {/* <!-- Footer Links -->
-
-            <!-- Copyright --> */}
-            <div className="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-            </div>
-            {/* <!-- Copyright --> */}
-
+            {/* <!-- Footer Links --> */}
         </footer>
 
         <style jsx>{`
             #outter {
-            background-color: #fb8d8d;
+                background-color: #fb8d8d;
             }
 
             .deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto {
                 width: 60px;
+            }
+
+            a{
+                color: #ec4c4c;
             }
         
         `}</style>

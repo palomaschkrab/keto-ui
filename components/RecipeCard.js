@@ -12,7 +12,7 @@ const RecipeCard = props => (
             </Link>
             <style jsx>{`
                     .border-pink {
-                        border-color: #FFD8FF;
+                        border-color: #fdd7d7;
                     }
                 `}
             </style> 

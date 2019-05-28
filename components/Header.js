@@ -7,6 +7,7 @@ const Header = () => (
       <Head>
         <title>How to Keto Cook</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+      
       </Head>
       <nav className="navbar navbar-expand-lg navbar-light">
         <Link href="/">
