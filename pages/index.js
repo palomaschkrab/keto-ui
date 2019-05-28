@@ -2,13 +2,13 @@ import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import RecipeCardsLayout from '../components/RecipeCardsLayout'
-
+import BannerCarousel from '../components/BannerCarousel'
 const Index = (props) => (
     <Layout>
       <div>
+        <BannerCarousel/>
         <RecipeCardsLayout recipes={props.recipes} />
       </div>
-        
     </Layout>   
 )
 

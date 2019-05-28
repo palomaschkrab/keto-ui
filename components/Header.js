@@ -6,7 +6,11 @@ const Header = () => (
       <div id="header">
       <Head>
         <title>How to Keto Cook</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       
       
       </Head>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -29,7 +33,7 @@ const Header = () => (
         </div>
       </nav>
     </div>
-
+   
     <style jsx>{`
       #header {
         background-color: #fb8d8d;
