@@ -11,7 +11,7 @@ const Header = () => (
       <nav className="navbar navbar-expand-lg navbar-light">
         <Link href="/">
             <a>
-              <img src="../static/images/logo.png" className='navbar-brand' alt='logo' width="150px" height="65px"/>
+              <img src="../static/images/red_logo.png" className='navbar-brand' alt='logo' width="150px" height="65px"/>
             </a>                
         </Link>
         {/* <a className="navbar-brand" href="#">How to Keto Cook</a> */}
@@ -31,7 +31,7 @@ const Header = () => (
 
     <style jsx>{`
       #header {
-        background-color: #DDA0DD;
+        background-color: #fb8d8d;
       } 
       li {
         font-size: 160%;

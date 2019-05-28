@@ -10,7 +10,7 @@ const Layout = props => (
     </div>   
     <style jsx>{`
             .pinkbg {
-              background-color: #FFF7FF;
+              background-color: #fff9f9;
             }
         `}
     </style> 

@@ -135,7 +135,7 @@ const Footer = () => (
 
         <style jsx>{`
             #outter {
-            background-color: #DDA0DD;
+            background-color: #fb8d8d;
             }
 
             .deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto {
