@@ -14,12 +14,26 @@ class RecipeCardsLayout extends React.Component {
       })
       let rows = <div className="row">{cols}</div>
         return (
-          <div className="p-5">
-            <h3>All Recipes</h3>
-            {rows}
-          </div>      
+          <div>
+            <div className="p-5">
+              <h3>All Recipes</h3>
+              {rows}
+            </div>  
+            <style jsx>{`
+              h3 {
+                color: #890000;
+                font-size: 150%;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+              }  
+            `}</style>  
+          </div>
+             
         );
+        
    }
+
+   
 
 }
 

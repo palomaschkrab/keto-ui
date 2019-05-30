@@ -6,7 +6,7 @@ const Header = () => (
       <div id="header">
       <Head>
         <title>How to Keto Cook</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon_greyBG.ico" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -39,9 +39,10 @@ const Header = () => (
         background-color: #fb8d8d;
       } 
       li {
+        color: #890000;
         font-size: 160%;
         font-style: italic;
-        font-family: "Times New Roman", Times, serif;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
     `}</style>

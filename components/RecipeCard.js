@@ -13,7 +13,11 @@ const RecipeCard = props => (
             <style jsx>{`
                     .border-pink {
                         border-color: #fdd7d7;
-                    }
+                    }  
+                    a{
+                        color: #DB3939;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }                  
                 `}
             </style> 
         </div>
