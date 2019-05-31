@@ -6,7 +6,7 @@ import RecipeCardsLayout from '../components/RecipeCardsLayout'
 const AboutUs = (props) => (
     <Layout>
       
-          <div className="row">
+          <div className="row pt-3">
             <div className="col-lg-6 col-md-6 col-xs-6">
                 <img src="../static/images/me.jpg" alt="My Image" className="img-fluid"/>
             </div>
