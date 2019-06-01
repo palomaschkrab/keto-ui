@@ -1,11 +1,10 @@
 class InstructionsLayout extends React.Component {    
  
     render() {
-        return(
+        return(           
             <div>
-                <h4>Instructions</h4>
                 <p>{this.props.instructions}</p>
-            </div>            
+            </div>                   
         );
     }
 }

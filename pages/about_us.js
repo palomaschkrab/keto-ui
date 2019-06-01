@@ -8,7 +8,7 @@ const AboutUs = (props) => (
       
           <div className="row pt-3">
             <div className="col-lg-6 col-md-6 col-xs-6">
-                <img src="../static/images/me.jpg" alt="My Image" className="img-fluid"/>
+                <img src="../static/images/me.jpg" alt="My Image" className="img-fluid responsive"/>
             </div>
             <div className="col-lg-6  col-md-6 col-xs-6">
                 <p className="pt-1">Hello keto friends,<br/><br/>
@@ -32,6 +32,14 @@ const AboutUs = (props) => (
                     If you are like me and cannot stand to have the same meal every day, join me on <b> How to keto cook</b> and feel free to send me your favorite recipes.
                 </p>
             </div>
+            <style jsx>{`
+                .responsive {
+                    max-width: 100%;
+                    height: auto;
+                    }            
+            `}
+            </style> 
+            
           </div>
            
     </Layout>   

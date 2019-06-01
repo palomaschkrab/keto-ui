@@ -62,7 +62,10 @@ const Footer = () => (
                         <h6 className="text-uppercase font-weight-bold">Info</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto pt-2" />
                         <Link href="about_us">
-                            <a href="#!">About Us</a>
+                            <a href="#!">About us</a>
+                        </Link><br/>
+                        <Link href="share">
+                            <a href="#!">Share your favorites</a>
                         </Link>
                     </div>
                      {/* <!-- Grid column -->
