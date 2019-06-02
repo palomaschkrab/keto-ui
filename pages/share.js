@@ -5,7 +5,7 @@ const Share = (props) => (
           <div className="row container pt-3">
               <div className="col-lg-6 col-md-6 col-xs-6">
                   <img src="../static/images/raspberries.jpg" className="img-fluid"></img>
-                  <figcaption>Image by <a href="https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1561457">congerdesign</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1561457">Pixabay</a></figcaption>
+                  <p/>
               </div>
               <div className="col-lg-6 col-md-6 col-xs-6">
                 <p> Hello keto friends,<br/>You are more than welcome to send your favorite recipe to howtoketocook@gmail.com.

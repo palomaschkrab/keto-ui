@@ -9,13 +9,13 @@ class MacronutrientsInformationLayout extends React.Component {
       return (    
         <div className="col-lg-12 bg-white text-dark rounded">
             <p className="text-left"> 
-                <FontAwesomeIcon icon={faBreadSlice} color="#890000" size="1x"/> Carbs: {this.props.carbs}
+                <FontAwesomeIcon icon={faBreadSlice} color="#890000" width="16"/> Carbs: {this.props.carbs}
             </p>
             <p className="text-left"> 
-                <FontAwesomeIcon icon={faBacon} color="#890000" size="1x"/> Fat: {this.props.fat}
+                <FontAwesomeIcon icon={faBacon} color="#890000" width="16"/> Fat: {this.props.fat}
             </p>
             <p className="text-left"> 
-                <FontAwesomeIcon icon={faDrumstickBite} color="#890000" size="1x"/> Protein: {this.props.protein}
+                <FontAwesomeIcon icon={faDrumstickBite} color="#890000" width="16"/> Protein: {this.props.protein}
             </p>
         </div>
       );

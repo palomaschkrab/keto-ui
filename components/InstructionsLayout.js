@@ -1,9 +1,13 @@
 class InstructionsLayout extends React.Component {    
  
     render() {
+        
+
         return(           
             <div>
-                <p>{this.props.instructions}</p>
+                {this.props.instructions.split('\n').map(i => {
+                    return <p>{i}</p>
+                })}
             </div>                   
         );
     }

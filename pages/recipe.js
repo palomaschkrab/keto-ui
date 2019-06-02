@@ -17,7 +17,7 @@ const Recipe = props => (
                     <div className="col-lg-7">               
                         <div className="row text-dark">
                             <div className="col-lg-12">
-                                <h1>{props.recipe.name} {props.recipe.id}</h1>
+                                <h1>{props.recipe.name}</h1>
                             </div>
                         </div>
                         <br/>

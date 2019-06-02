@@ -9,13 +9,13 @@ class TimeAndPortionInformationLayout extends React.Component {
       return (    
         <div className="col-lg-12 bg-white text-dark rounded">
             <p className="text-left"> 
-                <FontAwesomeIcon icon={faHourglass} color="#890000" size="1x"/> Cooking Time: {this.props.cookingTime}
+                <FontAwesomeIcon icon={faHourglass} color="#890000" width="14"/> Cooking Time: {this.props.cookingTime}
             </p>
             <p className="text-left"> 
-                <FontAwesomeIcon icon={faClock} color="#890000" size="1x"/> Prep Time: {this.props.prepTime}
+                <FontAwesomeIcon icon={faClock} color="#890000" width="16"/> Prep Time: {this.props.prepTime}
             </p>
             <p className="text-left"> 
-                <FontAwesomeIcon icon={faConciergeBell} color="#890000" size="1x"/> Portions: {this.props.portions}
+                <FontAwesomeIcon icon={faConciergeBell} color="#890000" width="16" /> Portions: {this.props.portions}
             </p>
         </div>
       );

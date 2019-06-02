@@ -25,15 +25,15 @@ const Footer = () => (
                         <div className="col-md-6 col-lg-7 text-center text-md-right">    
                             {/* <!-- Facebook --> */}                            
                             <a className="fb-ic p-2" href="https://www.facebook.com/howtoketo.cook.9" target="_blank">
-                                <FontAwesomeIcon icon={faFacebook} color="white" size="2x"/>
+                                <FontAwesomeIcon icon={faFacebook} color="white" width="16"/>
                             </a>                            
                             {/* <!-- Twitter --> */}                            
                             <a className="tw-ic p-2" href="https://twitter.com/HowKeto" target="_blank">
-                                <FontAwesomeIcon icon={faTwitter} color="white" size="2x"/>
+                                <FontAwesomeIcon icon={faTwitter} color="white" width="16"/>
                             </a>                           
                             {/* <!--Linkedin --> */}
                             <a className="li-ic p-2" href="https://www.linkedin.com/in/paloma-schkrab/" target="_blank">
-                                <FontAwesomeIcon icon={faLinkedin} color="white" size="2x"/>
+                                <FontAwesomeIcon icon={faLinkedin} color="white" width="16"/>
                             </a>
                         </div>
                         {/* <!-- Grid column --> */}
@@ -61,12 +61,12 @@ const Footer = () => (
                         {/* <!-- Links --> */}
                         <h6 className="text-uppercase font-weight-bold">Info</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto pt-2" />
-                        <Link href="about_us">
+                        <p><Link href="about_us">
                             <a href="#!">About us</a>
-                        </Link><br/>
-                        <Link href="share">
+                        </Link></p>
+                        <p><Link href="share">
                             <a href="#!">Share your favorites</a>
-                        </Link>
+                        </Link></p>
                     </div>
                      {/* <!-- Grid column -->
                     
@@ -77,9 +77,9 @@ const Footer = () => (
                         <h6 className="text-uppercase font-weight-bold">Contact US</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} color="pink" size="1x"/> Vancouver, BC - CA</p>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} color="pink" width="16"/> Vancouver, BC - CA</p>
                         <p>
-                        <FontAwesomeIcon icon={faEnvelope} color="pink" size="1x"/> howtoketocook@gmail.com</p>
+                        <FontAwesomeIcon icon={faEnvelope} color="pink" width="16"/> howtoketocook@gmail.com</p>
 
                     </div>
                     {/* <!-- Grid column --> */}

@@ -12,7 +12,7 @@ const BannerCarousel = props => (
   <div className="carousel-inner" role="listbox">
     <div className="carousel-item active">
       <div className="view">
-        <a href="http://keto.renatomolina.com">
+        <a href="http://keto.renatomolina.com" target="_blank">
           <img className="d-block w-100 h-70" src="../static/images/ways_to_ketosis.png"
             alt="First slide"/>
         </a>        
@@ -21,7 +21,7 @@ const BannerCarousel = props => (
     </div>
     <div className="carousel-item border-pink">
       <div className="view">
-        <a href="https://www.netflix.com/watch/80238655?trackId=13752289&tctx=0%2C0%2C920952f765d0b1ae4a0ab710bcf15421298503ff%3A68ed08ce11913cec140f0a5d55dd2d10d5122c32%2C%2C">
+        <a href="https://www.netflix.com/watch/80238655?trackId=13752289&tctx=0%2C0%2C920952f765d0b1ae4a0ab710bcf15421298503ff%3A68ed08ce11913cec140f0a5d55dd2d10d5122c32%2C%2C"  target="_blank">
           <img className="d-block w-100 h-70" src="../static/images/magic_pill.png"
             alt="Second slide"/>
         </a>
