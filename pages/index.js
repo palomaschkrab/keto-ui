@@ -13,7 +13,7 @@ const Index = (props) => (
 )
 
 Index.getInitialProps = async function() {
-  const res = await fetch('http://localhost:8080/api/public/recipes')
+  const res = await fetch('https://keto-api.herokuapp.com/api/public/recipes')
   const data = await res.json()
 
   console.log(`Show data fetched. Count: ${data.length}`)
