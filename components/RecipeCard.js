@@ -17,7 +17,12 @@ const RecipeCard = props => (
                     a{
                         color: #DB3939;
                         font-family: Arial, Helvetica, sans-serif;
-                    }                  
+                    } 
+                    .card-img-top {
+                        width: 100%;
+                        height: 15vw;
+                        object-fit: cover;
+                    }                 
                 `}
             </style> 
         </div>
