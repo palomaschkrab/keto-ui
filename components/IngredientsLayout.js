@@ -8,7 +8,7 @@ class IngredientsLayout extends React.Component {
               <div>    
                 <div className="row">
                   <div className="col-sm">
-                    <p>{ingredient.quantity} {ingredient.name} ({ingredient.unit})</p>
+                    <p>{ingredient.quantity} {ingredient.unit} {ingredient.name} </p>
                   </div>
                 </div>
               </div>      

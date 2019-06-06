@@ -5,6 +5,16 @@ const Header = () => (
   <div>
       <div id="header">
       <Head>
+        {/* Global site tag (gtag.js) - Google Analytics  */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141670136-1"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-141670136-1');
+          `}          
+        </script>
         <title>How to Keto Cook</title>
         <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon_greyBG.ico" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
