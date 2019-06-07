@@ -8,7 +8,7 @@ import AdditionalInformationLayout from '../components/AdditionalInformationLayo
 
 const Recipe = props => (
     <Layout>
-        <div className="p-5">
+        <div className="container pt-4">
             <div >
                 <div className="row">
                     <div className="col-lg-5">
@@ -22,15 +22,19 @@ const Recipe = props => (
                         </div>
                         <br/>
                         <div className="row">
-                            <div className="col-lg-4">                               
-                                <TimeAndPortionInformationLayout cookingTime = {props.recipe.cookingTime} prepTime={props.recipe.prepTime} portions={props.recipe.portions}/>
-                                <MacronutrientsInformationLayout carbs={props.recipe.macronutrients.carbs} fat={props.recipe.macronutrients.fat} protein={props.recipe.macronutrients.protein}/>                        
+                            <div className="col-lg-6">                               
+                                <TimeAndPortionInformationLayout cookingTime = {props.recipe.cookingTime} prepTime={props.recipe.prepTime} portions={props.recipe.portions}/>                                                
                             </div>
                             <br/>
-                            <div className="col-lg-8" >
+                            <div className="col-lg-6" >
+                                <MacronutrientsInformationLayout carbs={props.recipe.macronutrients.carbs} fat={props.recipe.macronutrients.fat} protein={props.recipe.macronutrients.protein}/>        
+                             </div>    
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-12">
                                 <AdditionalInformationLayout additionalInformation = {props.recipe.additionalInfo}/>
-                            </div>    
-                        </div>       
+                            </div>
+                        </div>      
                     </div>  
                     
                 </div>

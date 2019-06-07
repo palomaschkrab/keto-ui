@@ -31,6 +31,7 @@ const AboutUs = (props) => (
                     Our options are usually limited to salads and "salad-wrapped burgers".<br/><br/>
                     If you are like me and cannot stand to have the same meal every day, join me on <b> How to keto cook</b> and feel free to send me your favorite recipes.
                 </p>
+                <p><b>Note: </b>This page is a work in progress. I will be posting more recipes and new features as soon as I finish them.</p>
             </div>
             <style jsx>{`
                 .responsive {
