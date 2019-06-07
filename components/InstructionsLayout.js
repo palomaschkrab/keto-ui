@@ -1,17 +1,14 @@
-class InstructionsLayout extends React.Component {    
+class InstructionsLayout extends React.Component {   
  
     render() {
-        
-
+        let index = 0;
         return(           
-            <div>
+            <div>                
                 {this.props.instructions.split('\n').map(i => {
-                    return <p>{i}</p>
+                    return <p key={index++}>{i}</p>
                 })}
             </div>                   
         );
     }
 }
-
-
 export default InstructionsLayout
