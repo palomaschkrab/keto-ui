@@ -41,12 +41,12 @@ const Recipe = props => (
             </div>
             <br/>
             <h5>Ingredients</h5>
-            <div className="bg-white text-dark rounded">
+            <div className="text-dark rounded">
                 <IngredientsLayout ingredients={props.recipe.ingredients}/>                
             </div>
             <br/>
             <h5>Instructions</h5>
-            <div className="bg-white text-dark rounded">
+            <div className="text-dark rounded ">
                 <InstructionsLayout instructions={props.recipe.instructions}/>
             </div>
         </div>
@@ -60,7 +60,8 @@ const Recipe = props => (
                 font-size: 160%;
                 font-style: italic;
                 font-family: Arial, Helvetica, sans-serif;
-              }         
+              }
+                    
         `}
         </style> 
     </Layout>    
