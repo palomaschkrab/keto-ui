@@ -5,7 +5,7 @@ import InstructionsLayout from '../components/InstructionsLayout.js'
 import TimeAndPortionInformationLayout from '../components/TimeAndPortionInformationLayout.js'
 import MacronutrientsInformationLayout from '../components/MacronutrientsInformationLayout.js'
 import AdditionalInformationLayout from '../components/AdditionalInformationLayout.js'
-
+  
 const Recipe = props => (
     <Layout>
         <div className="container pt-4">
@@ -47,7 +47,7 @@ const Recipe = props => (
             <br/>
             <h5>Instructions</h5>
             <div className="text-dark rounded ">
-                <InstructionsLayout instructions={props.recipe.instructions}/>
+                <InstructionsLayout instructions={props.recipe.instructions} note={props.recipe.note} />                
             </div>
         </div>
         <style jsx>{`
@@ -69,7 +69,8 @@ const Recipe = props => (
 
 Recipe.getInitialProps = async function(context) {
     const { id } = context.query
-    const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${id}`)    
+    // const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${id}`)    
+    const res = await fetch(`http://localhost:8080/api/public/recipes/${id}`)  
     const recipe = await res.json()
     
     return { recipe }
