@@ -64,7 +64,7 @@ const Footer = () => (
                         <p><Link href="about_us">
                             <a href="#!">About us</a>
                         </Link></p>
-                        <p><Link href="share">
+                        <p><Link href="share2">
                             <a href="#!">Share your favorites</a>
                         </Link></p>
                     </div>
