@@ -1,44 +1,24 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
+import ColumnInfo from './ColumnInfo'
+import SocialMedia from './SocialMedia';
+
 const Footer = () => (
     <div>
-        {/* <!-- Footer --> */}
         <footer className="page-footer font-small unique-color-dark">
             <div id="outter">
-                <div className="container">
-                    {/* <!-- Grid row--> */}
-                    <div className="row py-4 d-flex align-items-center">
-
-                        {/* <!-- Grid column --> */}
-                        <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                            <h6 className="mb-0">Get connected with us on social networks!</h6>
+                <div className="container py-2">
+                    <div className="row d-flex align-items-center">
+                        <div className="col-md-8 col-lg-8 text-center text-md-left mb-4 mb-md-0">                            
+                            <ColumnInfo column1="column 1" column2="column 2" column3="column 3"/>
                         </div>
-                        {/* <!-- Grid column --> */}
-
-                        {/* <!-- Grid column --> */}
-                        <div className="col-md-6 col-lg-7 text-center text-md-right">    
-                            {/* <!-- Facebook --> */}                            
-                            <a className="fb-ic p-2" href="https://www.facebook.com/howtoketo.cook.9" target="_blank">
-                                <FontAwesomeIcon icon={faFacebook} color="white" width="16"/>
-                            </a>                            
-                            {/* <!-- Twitter --> */}                            
-                            <a className="tw-ic p-2" href="https://twitter.com/HowKeto" target="_blank">
-                                <FontAwesomeIcon icon={faTwitter} color="white" width="16"/>
-                            </a>                           
-                            {/* <!--Linkedin --> */}
-                            <a className="li-ic p-2" href="https://www.linkedin.com/in/paloma-schkrab/" target="_blank">
-                                <FontAwesomeIcon icon={faLinkedin} color="white" width="16"/>
-                            </a>
+                        <div className="col-md-4 col-lg-4 text-center">   
+                            <SocialMedia/>
                         </div>
-                        {/* <!-- Grid column --> */}
                     </div>
-                    {/* <!-- Grid row--> */}
                 </div>
             </div>
 

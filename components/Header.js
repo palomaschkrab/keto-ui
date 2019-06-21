@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-const Header = () => (
+const Header = (props) => (
   <div>
       <div id="header">
       <Head>
@@ -15,7 +15,10 @@ const Header = () => (
           gtag('config', 'UA-141670136-1');
           `}          
         </script>
-        <title>How to Keto Cook</title>
+        <title>{props.title}</title>
+        <meta property="og:description" content={`${props.description}`}/>
+        <meta property="og:image" content={`${props.image}`}/>
+        <meta property="og:url" content="TODO"/>
         <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon_greyBG.ico" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

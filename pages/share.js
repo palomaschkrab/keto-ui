@@ -1,7 +1,7 @@
 import Layout from '../components/MyLayout.js'
 
 const Share = (props) => (
-    <Layout>      
+    <Layout title="How to keto cook | Share your favourite keto diet recipes" description="Have your recipes ready on the go. Share your favourite keto diet recipes with your friends and family on the most delicious collaborative keto diet recipes website" image="https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/raspberries_with_a_book_and_two_jars.jpg">      
           <div className="row container pt-3">
               <div className="col-lg-6 col-md-6 col-xs-6">
                   <img src="../static/images/raspberries.jpg" className="img-fluid"></img>

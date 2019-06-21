@@ -7,7 +7,7 @@ import MacronutrientsInformationLayout from '../components/MacronutrientsInforma
 import AdditionalInformationLayout from '../components/AdditionalInformationLayout.js'
   
 const Recipe = props => (
-    <Layout>
+    <Layout title={`How to keto cook | ${props.recipe.name}`} description={`${props.recipe.additionalInfo}`} image={`${props.recipe.imageUrl}`}>
         <div className="container pt-4">
             <div >
                 <div className="row">
