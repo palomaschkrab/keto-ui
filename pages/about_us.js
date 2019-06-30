@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch'
 import RecipeCardsLayout from '../components/RecipeCardsLayout'
 
 const AboutUs = (props) => (
-    <Layout title="How to keto cook | About us" description="Find out a little bit more about why I chose keto and how I came up with the idea to build this collaborative keto diet recipes website" image="https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/me.jpg">
+    <Layout title="How to keto cook | About us" description="Find out a little bit more about why I chose keto and how I came up with the idea to build this collaborative keto diet recipes website" image="https://s3.ca-central-1.amazonaws.com/how.to.keto.cook.recipes.images/me.jpg"  ogUrl="www.howtoketocook.com/about_us">
       
           <div className="row pt-3">
             <div className="col-lg-6 col-md-6 col-xs-6">

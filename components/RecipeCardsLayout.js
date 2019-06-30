@@ -8,7 +8,7 @@ class RecipeCardsLayout extends React.Component {
       
         let col =
             <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 ml-0 mb-3" key={recipe.id}>
-                <RecipeCard id={recipe.id} name={recipe.name} url={recipe.imageUrl} />  
+                <RecipeCard id={recipe.id} urlId={recipe.urlId} name={recipe.name} url={recipe.imageUrl} />  
             </div>
           cols.push(col);
       })

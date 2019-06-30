@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const RecipeCard = props => (    
         <div className='card border-pink'>
-            <Link href={`/recipe?id=${props.id}`}>
+            <Link as={`/recipes/${props.urlId}`} href={`/recipe?urlId=${props.urlId}`}>
                 <a>
                     <img src={props.url} className='card-img-top' alt='...'/>
                     <div className='card-body'>

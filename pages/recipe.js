@@ -7,7 +7,7 @@ import MacronutrientsInformationLayout from '../components/MacronutrientsInforma
 import AdditionalInformationLayout from '../components/AdditionalInformationLayout.js'
   
 const Recipe = props => (
-    <Layout title={`How to keto cook | ${props.recipe.name}`} description={`${props.recipe.additionalInfo}`} image={`${props.recipe.imageUrl}`}>
+<Layout title={`How to keto cook | ${props.recipe.name}`} description={`${props.recipe.additionalInfo}`} image={`${props.recipe.imageUrl}`} ogUrl={`www.howtoketocook.com/recipes/${props.recipe.urlId}`}>
         <div className="container pt-4">
             <div >
                 <div className="row">
@@ -68,9 +68,9 @@ const Recipe = props => (
 )
 
 Recipe.getInitialProps = async function(context) {
-    const { id } = context.query
-    // const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${id}`)    
-    const res = await fetch(`http://localhost:8080/api/public/recipes/${id}`)  
+    const { urlId } = context.query
+    // const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${urlId}`)    
+    const res = await fetch(`http://localhost:8080/api/public/recipes/${urlId}`)  
     const recipe = await res.json()
     
     return { recipe }

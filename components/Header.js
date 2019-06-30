@@ -18,7 +18,7 @@ const Header = (props) => (
         <title>{props.title}</title>
         <meta property="og:description" content={`${props.description}`}/>
         <meta property="og:image" content={`${props.image}`}/>
-        <meta property="og:url" content="TODO"/>
+        <meta property="og:url" content={`${props.ogUrl}`}/>
         <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon_greyBG.ico" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

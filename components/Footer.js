@@ -13,7 +13,7 @@ const Footer = () => (
                 <div className="container py-2">
                     <div className="row d-flex align-items-center">
                         <div className="col-md-8 col-lg-8 text-center text-md-left mb-4 mb-md-0">                            
-                            <ColumnInfo column1="column 1" column2="column 2" column3="column 3"/>
+                            <ColumnInfo column1="Boost your energy" column2="Increase mental clarity" column3="Less meals, more free time"/>
                         </div>
                         <div className="col-md-4 col-lg-4 text-center">   
                             <SocialMedia/>
