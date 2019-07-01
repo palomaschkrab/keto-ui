@@ -69,8 +69,8 @@ const Recipe = props => (
 
 Recipe.getInitialProps = async function(context) {
     const { urlId } = context.query
-    // const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${urlId}`)    
-    const res = await fetch(`http://localhost:8080/api/public/recipes/${urlId}`)  
+    const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${urlId}`)    
+    //const res = await fetch(`http://localhost:8080/api/public/recipes/${urlId}`)  
     const recipe = await res.json()
     
     return { recipe }
