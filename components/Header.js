@@ -6,13 +6,13 @@ const Header = (props) => (
       <div id="header">
       <Head>
         {/* Global site tag (gtag.js) - Google Analytics  */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141670136-1"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143192359-1"></script>
         <script>{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'UA-141670136-1');
+          gtag('config', 'UA-143192359-1');
           `}          
         </script>
         <title>{props.title}</title>
