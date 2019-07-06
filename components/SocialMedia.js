@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const SocialMedia = props => (
     <div>
@@ -19,7 +20,11 @@ const SocialMedia = props => (
                 {/* <!-- Twitter --> */}                            
                 <a className="tw-ic p-2" href="https://twitter.com/HowKeto" target="_blank">
                     <FontAwesomeIcon icon={faTwitter} color="white" width="16"/>
-                </a>                           
+                </a>    
+                {/* <!-- Instagram --> */}                            
+                <a className="tw-ic p-2" href="https://www.instagram.com/howtoketocook/" target="_blank">
+                    <FontAwesomeIcon icon={faInstagram} color="white" width="16"/>
+                </a>                       
                 {/* <!--Linkedin --> */}
                 <a className="li-ic p-2" href="https://www.linkedin.com/in/paloma-schkrab/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} color="white" width="16"/>
