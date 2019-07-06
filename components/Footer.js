@@ -41,10 +41,10 @@ const Footer = () => (
                         {/* <!-- Links --> */}
                         <h6 className="text-uppercase font-weight-bold">Info</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto pt-2" />
-                        <p><Link href="about_us">
+                        <p><Link href="/about_us">
                             <a href="#!">About us</a>
                         </Link></p>
-                        <p><Link href="share">
+                        <p><Link href="/share">
                             <a href="#!">Share your favorites</a>
                         </Link></p>
                     </div>
