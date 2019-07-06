@@ -54,7 +54,6 @@ const Header = (props) => (
       li {
         color: #890000;
         font-size: 160%;
-        font-style: italic;
         font-family: Arial, Helvetica, sans-serif;
       }
 

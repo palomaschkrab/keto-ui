@@ -23,7 +23,6 @@ class RecipeCardsLayout extends React.Component {
               h3 {
                 color: #890000;
                 font-size: 150%;
-                font-style: italic;
                 font-family: Arial, Helvetica, sans-serif;
               }  
             `}</style>  

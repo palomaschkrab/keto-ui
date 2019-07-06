@@ -58,7 +58,6 @@ const Recipe = props => (
             h1,h5 {
                 color: #890000;
                 font-size: 160%;
-                font-style: italic;
                 font-family: Arial, Helvetica, sans-serif;
               }
                     
@@ -70,7 +69,7 @@ const Recipe = props => (
 Recipe.getInitialProps = async function(context) {
     const { urlId } = context.query
     const res = await fetch(`https://keto-api.herokuapp.com/api/public/recipes/${urlId}`)    
-    //const res = await fetch(`http://localhost:8080/api/public/recipes/${urlId}`)  
+    // const res = await fetch(`http://localhost:8080/api/public/recipes/${urlId}`)  
     const recipe = await res.json()
     
     return { recipe }
